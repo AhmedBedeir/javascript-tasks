@@ -2,7 +2,7 @@
 
 ---
 
-# 1- [DOM Challenge](<[dom-challenge/index.html](https://www.youtube.com/watch?v=mGhGjzIKEqk)>)
+# 1- [DOM Challenge](https://www.youtube.com/watch?v=mGhGjzIKEqk)
 
 Description
 
