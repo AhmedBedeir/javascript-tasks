@@ -4,7 +4,7 @@ body.style.cssText = 'margin: 0; padding: 0; background-color:#fafafa;';
 const color = '#ececec';
 const fontFamily = 'monospace';
 const size = '19px';
-const paddingSection = '30px';
+const paddingSection = '15px';
 // preparing header and container
 const myHeader = document.createElement('header');
 const container = document.createElement('div');
@@ -83,10 +83,11 @@ for (let i = 1; i < 16; i++) {
     text-align: center;`;
   let numberProduct = document.createElement('h1');
   numberProduct.innerHTML = i;
-  numberProduct.style.cssText = `margin-bottom: 0;`;
+  numberProduct.style.cssText = `margin-bottom: 0; margin-top: 10px`;
   product.append(numberProduct);
   let nameOfProduct = document.createElement('p');
   nameOfProduct.innerHTML = `Product`;
+  nameOfProduct.style.cssText = `margin-bottom: 10px;`;
   product.append(nameOfProduct);
   mainContent.append(product);
 }
