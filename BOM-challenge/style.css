@@ -1,0 +1,80 @@
+:root {
+  --primary-color: 111, 76, 255;
+  --dark: #374151;
+  --text-color: 256, 256, 256;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Fira sans', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #000000;
+  background: -webkit-linear-gradient(to bottom, #363636, #000000);
+  background: linear-gradient(to top, #1f1f1f, #000000);
+}
+.h1 {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 50px auto;
+  font-size: 50px;
+}
+.form {
+  background-color: #1b1c1f;
+  padding: 30px;
+  width: 45%;
+  margin: 30px auto 0;
+  text-align: center;
+  border-radius: 10px;
+}
+.input {
+  border: none;
+  background-color: #fefefe;
+  padding: 13px;
+  border-radius: 5px;
+  width: 70%;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.btn {
+  color: #fefefe;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+  border: 0;
+  color: rgba(var(--text-color));
+}
+.h2 {
+  color: #fefefe;
+  margin: 25px auto 0 28%;
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tasks {
+  padding: 30px;
+  background-color: #1b1c1f;
+  margin: 30px auto;
+  width: 45%;
+  border-radius: 10px;
+}
+.tasks div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding: 13px;
+  width: 80%;
+  margin: 15px auto;
+}
+.tasks div .btn {
+  font-size: 14px;
+  padding: 8px;
+}
