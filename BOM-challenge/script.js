@@ -20,13 +20,8 @@ function needToDelete() {
     elm.addEventListener('click', () => {
       let taskNeedToDelete = elm.previousElementSibling.innerHTML;
       //delete from storage
-      for (let i = 0; i < tasksList.length; i++) {
-        if (tasksList[i].title === taskNeedToDelete) {
-          tasksList.splice(i, 1);
-          saveToStorage();
-          break;
-        }
-      }
+      tasksList = tasksList.filter((elm) => elm.title !== taskNeedToDelete);
+      saveToStorage();
       elm.parentElement.remove();
     });
   });
@@ -51,12 +46,11 @@ btn.onclick = function () {
     creatTask(input.value);
     const taskObj = {
       title: input.value,
-      id: Math.floor(Math.random() * 100000),
+      id: Math.floor(Math.random() * 100000), // search for id
     };
     tasksList.push(taskObj);
     saveToStorage();
     input.value = '';
-    input.focus();
   } else {
     alert('Enter Your Task..!');
   }
