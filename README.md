@@ -10,7 +10,7 @@ Use javascript only to design a webpage such that it has a header, footer and bo
 
 ![task1](dom-challenge/Capture.JPG)
 
-# 2- [BOM Challenge](https://www.youtube.com/watch?v=LzKt8GaoFMs)
+# 2- [BOM Challenge](./BOM-challenge/index.html)
 
 Description:
 
